@@ -15,3 +15,8 @@ def show_setting():
 @app.route('/profile/<username>')
 def show_profile(username):
     return 'Kamu berada di halaman profile user: %s' % username
+
+# halaman dinamis, blog ID
+@app.route('/blog/<int:blog_id>')
+def show_blog(blog_id):
+    return 'Kamu berada di blog ke-%d' %blog_id
