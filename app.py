@@ -4,7 +4,12 @@ app = Flask(__name__)
 # SERVER ROUTING
 @app.route('/')
 def index():
-    return render_template('index.html')
+    search = request.args.get('search') 
+    video = request.args.get('video')
+    if not search: #dictionary
+        return render_template('index.html')
+
+    return 'hasil search adalah ' + search + ' dan video nomor ' + video
 
 @app.route('/profile/<username>')
 def show_profile(username):

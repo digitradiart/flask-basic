@@ -1,4 +1,4 @@
-# flask-basic
+# flask-basic, salah satu micro framework dari Python
 
 Belajar Flask dari yutubnya Bang Hilman (Sekolah Koding)
 
